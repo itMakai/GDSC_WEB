@@ -1,9 +1,28 @@
+
+  .container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+  }
+  @media (max-width: 768px) {
+	.container {
+	  padding: 10px;
+	}
+  }
+  @media (max-width: 480px) {
+	body {
+	  font-size: 16px;
+	}
+	 .container {
+    padding: 5px;
+  }
+}
 .nav-links{
 	display: flex;
-	justify-content: space-around;
+	justify-content: flex-end;
 	align-items: center;
 	min-height: 5vh;
-	background-color: teal;
+	background-color: rgb(209, 218, 218);
 	font-family: "montserrat",sans-serif;
 }
 .about-link{
@@ -11,6 +30,7 @@
 	align-items: center;
 	background-color: teal;
 	min-height: 5vh;
+	font-family: ;
 	display: flex;
 	padding-right: 50px;
 }
@@ -24,13 +44,37 @@
 .desc{
 	font-style: "montserrat",sans-serif;
 	display: inline-block;
-	background-color: #0bec16;
 	padding-left: 20px;
 	padding-right: 20px;
 	font-size: 20px;
 }
 body{
-	background-color: #0bec16;
+	background-color: #f7f6f8;
+	color: #fff;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+.content{
+		flex: 1;
+		background-color: #140336;
+		padding: 20px;
+		display: contents;
+	}
+
+#end-footer{
+	background-color: aqua;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	align-items: center;
+	min-height: 4vh;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+}
 }
 .link-container {
     position: relative;
@@ -51,6 +95,7 @@ body{
 
   .link-container:hover .links {
     visibility: visible;
+	background-color: #140336;
 	
   }
 
@@ -60,3 +105,114 @@ body{
     display: block;
     margin-bottom: 5px;
   }
+ .team-class,
+ .project-class{
+	background-color: #333;
+	display: inline-block;
+	padding: 100px;
+	margin: 10px;
+	border-radius: 15px;
+	cursor: pointer;
+	min-height: 50px;
+	margin-top: 10px;
+ }
+ .team-class:hover,
+ .project-class:hover{
+	background-color: aqua;
+	padding: 100px;
+
+ }
+ .semi-circle-right{
+	width: 50vw;
+	height: 80vh;
+	background-color: white;
+	background: url('Screenshot from 2023-10-05 11-37-06.png') no-repeat center;
+	background-size: cover;
+	border-radius: 0% 50% 50% 0%;
+	position: absolute;
+	top: 11%;
+	left: 25.6%;
+	transform: translateX(-50%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgb(234, 245, 235);
+	font-size: 20px;
+	font-weight: bolder;
+	transition: trasform 0.3s; */
+ }
+ .semi-circle-left{
+	width: 50vw;
+	height: 80vh;
+	/* background-color: bisque; */
+	background: url('web.avif') no-repeat center;
+	background-size: cover;
+	border-radius: 50% 0 0% 50%;
+	position: fixed;
+	top: 11%;
+	right: 25.6%;
+	transform: translateX(50%);
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-size: 24px;
+	transition: trasform 0.3s; */
+	
+ }
+ /* .semi-circle:hover{
+	transform: translateX(-50%) translateX(2%);
+	padding: 2%;
+ } */
+  .col-container{
+	display: inline-block;
+	flex: 1;
+	background-color: aqua;
+	border-radius: 5px;
+	
+  }
+  .col{
+	flex: 1;
+	padding: 20px;
+	border: 1px solid #ccc;
+	justify-content: flex-end;
+	border-radius: 5px;
+  }
+  .events,
+  .organizers,
+  .membership{
+	background-color: aqua;
+	margin: 10%;
+	border-radius: 50% 0 50%;
+	cursor: pointer;
+	width: fit-content;
+	height: max-content;
+	
+  }
+  .day-container{
+	/* display: flex; */
+	align-items: flex-start;
+	background-color: #10ece1;
+	border-radius: 50% 0 50%;
+	justify-content: space-around;
+	padding: 10%;
+	display: ;
+	
+  }
+  @media screen and (max-width: 767px){
+	.day2-container{
+		width: 100%;
+		border-radius: 0;
+		height: auto;
+	}
+  }
+  .day2-container{
+	display: flex;
+	align-items: flex-start;
+	/* margin-right: 50%; */
+}
+.day-container:hover{
+	background-color: blue;
+	padding: 5%;
+	border-radius: 50% 0 50%;
+}
