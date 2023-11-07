@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>subscribe-button</title>
+	<style>
+		body{
+			background-color: rgb(14, 14, 209);
+		}
+	</style>
+</head>
+<body>
+	<p>Subscribe Button</p>
+	<button onclick="
+	subscribe();
+	" class="subscribe-button">subscribe</button>
+	<p>shipping Calculator</p>
+	<input placeholder="The cost of goods" class="costofGoods" onkeydown="
+	keyEvent(event);
+	">
+	<button onclick="calculate();"
+	 >calculate</button>
+	<p class="output"></p>
+	<script>
+		function subscribe(){
+			const buttonElement = document.querySelector('.subscribe-button');
+		
+		if (buttonElement.innerText === 'subscribe')
+		{
+			buttonElement.innerHTML = 'subscribed';
+		}
+		else
+		{
+			buttonElement.innerHTML = 'subscribe';
+		}
+	}
+	function calculate(){
+		const inputElement = document.querySelector('.costofGoods');
+
+		let cost = Number(inputElement.value);
+
+		if (cost < 30)
+		{
+			cost = cost + 5;
+		}
+		document.querySelector('.output').innerHTML = `the cost is $${cost}`;
+
+	}
+	function keyEvent(event) {
+		if(event.key === 'Enter'){
+			calculate();
+		}
+	}
+	</script>
+</body>
+</html>

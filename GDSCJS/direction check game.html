@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>direction check game</title>
+</head>
+<body>
+  <p>left, right and both direction. choose your direction to see your fate</p>
+      <button onclick="
+            const direction = Math.random();
+            let MachineDirection = '';
+
+            if (direction >= 0 && direction < 2 / 5){
+              MachineDirection = 'left';
+            } else if (direction >= 2 / 5 && direction <= 3 / 5 ){
+              MachineDirection = 'both';
+            } else if (direction > 3 / 5 && direction <= 1){
+              MachineDirection = 'right';
+            }
+
+            
+            let outcome = '';
+
+            if (MachineDirection === 'left'){
+              outcome = 'same direction'
+            } else if (MachineDirection === 'right'){
+              outcome = 'opposite direction'
+            } else if (MachineDirection === 'both'){
+              outcome = 'there is a road block'
+            }
+              console.log(MachineDirection)
+              console.log(outcome)
+              localStorage.setItem(MachineDirection, outcome);
+            alert(`you chosed left and your fate is ${outcome}`)
+            
+        ">left</button>
+            <button onclick="
+            const direction = Math.random();
+            let MachineDirection = '';
+
+            if (direction >= 0 && direction < 2 / 5){
+              MachineDirection = 'left';
+            } else if (direction >= 2 / 5 && direction <= 3 / 5 ){
+              MachineDirection = 'both';
+            } else if (direction > 3 / 5 && direction <= 1){
+              MachineDirection = 'right';
+            }
+
+            
+            let outcome = '';
+
+            if (MachineDirection === 'left'){
+              outcome = 'opposite direction'
+            } else if (MachineDirection === 'right'){
+              outcome = 'same direction'
+            } else if (MachineDirection === 'both'){
+              outcome = 'there is a road block'
+            }
+              
+              localStorage.setItem(MachineDirection, outcome);
+              alert(`you chosed right and your fate is ${outcome}`)
+          ">right</button>
+      <button onclick="
+            const direction = Math.random();
+            let MachineDirection = '';
+
+            if (direction >= 0 && direction < 2 / 5){
+              MachineDirection = 'left';
+            } else if (direction >= 2 / 5 && direction <= 3 / 5 ){
+              MachineDirection = 'both';
+            } else if (direction > 3 / 5 && direction <= 1){
+              MachineDirection = 'right';
+            }
+
+            
+            let outcome = '';
+
+            if (MachineDirection === 'left'){
+              outcome = 'traffic jam'
+            } else if (MachineDirection === 'right'){
+              outcome = 'traffic jam'
+            } else if (MachineDirection === 'both'){
+              outcome = 'same direction'
+            }
+           /* alert(`you chosed both direction and your fate  is ${outcome}`); */
+           document.write(`you chosed both and your fate is ${outcome}`);
+  
+        localStorage.setItem(MachineDirection, outcome);
+      ">both</button>
+  <script>
+  </script>
+</body>
+</html>

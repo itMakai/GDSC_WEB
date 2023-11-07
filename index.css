@@ -57,6 +57,7 @@ body{
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
+	background-image: url('web.avif');
 .content{
 		flex: 1;
 		background-color: #140336;
@@ -212,7 +213,7 @@ body{
 	/* margin-right: 50%; */
 }
 .day-container:hover{
-	background-color: blue;
+	/* background-color: blue; */
 	padding: 5%;
 	border-radius: 50% 0 50%;
 }
